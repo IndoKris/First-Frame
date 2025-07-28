@@ -34,122 +34,175 @@
             </div>
         </section>
         <!-- About Me Section -->
-        <section id="about-section" class="section about-section">
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="{% static 'memories/profile_placeholder.jpg' %}" alt="Profile Photo"/>
-                </div>
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <h3>Priya Verma</h3>
-                    <p class="about-meta"><b>Branch:</b> Computer Science & Engineering<br>
-                       <b>College:</b> ABC Institute of Technology</p>
-                    <ul class="about-facts">
-                        <li>🎸 Plays guitar & loves indie music</li>
-                        <li>🌱 Hostel garden club member</li>
-                        <li>📚 Anime binge-watcher</li>
-                        <li>😄 Official campus meme creator</li>
-                    </ul>
-                    <p class="about-purpose">I built First Frame to preserve the crazy, emotional, and unforgettable memories of my first year, and maybe make you smile (or relate) along the way!</p>
-                </div>
-            </div>
-        </section>
-        <!-- Memories Section -->
-        <section id="memories-section" class="section memories-section">
-            <h2>Memories</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <div class="timeline-icon funny">😂</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">July 2024</div>
-                        <div class="timeline-desc">First orientation day: got lost in campus—ended up bonding with future besties!</div>
-                        <span class="timeline-tag funny">funny</span>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-icon emotional">🥹</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">August 2024</div>
-                        <div class="timeline-desc">Called home every night—homesickness hit hard, but found comfort with hostel friends.</div>
-                        <span class="timeline-tag emotional">emotional</span>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-icon event">🎤</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">October 2024</div>
-                        <div class="timeline-desc">Sang at the college fest! Never been more nervous—never felt prouder.</div>
-                        <span class="timeline-tag performance">performance</span>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-icon">👩‍💻</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">November 2024</div>
-                        <div class="timeline-desc">Pulled my first all-nighter for coding lab—teamwork and coffee saved the day!</div>
-                        <span class="timeline-tag coding">coding</span>
-                    </div>
-                </div>
-                <!-- Example Embedded Video -->
-                <div class="timeline-event video-event">
-                    <div class="timeline-icon">🎬</div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">December 2024</div>
-                        <div class="timeline-desc">
-                            <b>Dance night video recap:</b><br>
-                            <div class="video-mock">
-                                <img src="{% static 'memories/video_thumbnail.jpg' %}" alt="Dance Video Thumbnail"/>
-                                <div class="video-play">
-                                    <span>&#9654;</span>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="timeline-tag fun">fun</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="about-section" class="section about-section">
+  <div class="about-bg-fade"></div>
+  <div class="about-creative-card">
+    <div class="about-left">
+      <h2 class="about-heading">About Me</h2>
+      <h3 class="about-name">Krish Kumar</h3>
+      <div class="about-meta">
+        <span><b>Branch:</b> Computer Science & Engineering</span><br>
+        <span><b>College:</b> JSPM's Jayawantrao Sawant College of Engineering, Pune </span>
+      </div>
+      <ul class="about-facts">
+        <li>🏀 Inter-college basketball & football player</li>
+        <li>🧠 Passionate about AI, tech, and smart solutions</li>
+        <li>📜 Certified in Soft Skills, Generative AI, and Prompt Engineering</li>
+        <li>🐾 Loves fluffy animals and chill moments</li>
+      </ul>
+      <div class="about-purpose">
+        I built <b>First Frame</b> to preserve the chaotic, emotional, and unforgettable memories of my first year—and maybe give you a laugh, a throwback, or something to relate to!
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-profile-pic-frame">
+        <img src="{% static 'memories/MosaicArt.jpg' %}" alt="Profile Photo" class="about-profile-pic"/>
+        <div class="about-pic-glow"></div>
+      </div>
+      <div class="about-bubble about-bubble1">⚽</div>
+      <div class="about-bubble about-bubble2">💻</div>
+      <div class="about-bubble about-bubble3">🎧</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <section id="memories-section" class="section memories-section">
+  <h2>Memories</h2>
+  <div class="timeline">
+
+    <div class="timeline-event">
+      <div class="timeline-icon funny" title="Funny">😂</div>
+      <div class="timeline-content">
+        <div class="timeline-date">July 2024</div>
+        <video controls poster="{% static 'memories/thumb1.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/video1.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="timeline-desc">
+          First orientation day: got lost—ended up making lifelong friends!
+        </div>
+        <span class="timeline-tag funny">funny</span>
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-icon emotional" title="Emotional">🥲</div>
+      <div class="timeline-content">
+        <div class="timeline-date">September 2024</div>
+        <video controls poster="{% static 'memories/thumb2.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/video2.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="timeline-desc">
+          Homesickness hit hard, called family every night but found solace in friends.
+        </div>
+        <span class="timeline-tag emotional">emotional</span>
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-icon performance" title="Performance">🎤</div>
+      <div class="timeline-content">
+        <div class="timeline-date">October 2024</div>
+        <video controls poster="{% static 'memories/thumb3.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/video3.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="timeline-desc">
+          Performed at college fest — nerves were high, but the thrill unmatched.
+        </div>
+        <span class="timeline-tag performance">performance</span>
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-icon coding" title="Coding">💻</div>
+      <div class="timeline-content">
+        <div class="timeline-date">November 2024</div>
+        <video controls poster="{% static 'memories/thumb4.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/video4.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="timeline-desc">
+          Pulled an all-nighter for coding project — teamwork and caffeine saved the day.
+        </div>
+        <span class="timeline-tag coding">coding</span>
+      </div>
+    </div>
+
+    <div class="timeline-event">
+      <div class="timeline-icon" title="Video">🎬</div>
+      <div class="timeline-content">
+        <div class="timeline-date">December 2024</div>
+        <video controls poster="{% static 'memories/thumb5.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/video5.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="timeline-desc">
+          <b>Dance Night Recap Video</b>
+        </div>
+        <span class="timeline-tag fun">fun</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
         <!-- Gallery Section -->
-        <section id="gallery-section" class="section gallery-section">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-video">
-                    <!-- Mock video thumbnail/player at the top of gallery -->
-                    <div class="video-mock">
-                        <img src="{% static 'memories/video_thumbnail.jpg' %}" alt="Video Preview"/>
-                        <div class="video-play">
-                            <span>&#9654;</span>
-                        </div>
-                    </div>
-                    <p class="gallery-caption">Fest Performance Video</p>
-                </div>
-                <!-- 6 sample images -->
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery1.jpg' %}" alt="Memory 1"/>
-                    <p class="gallery-caption">Gang at the canteen</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery2.jpg' %}" alt="Memory 2"/>
-                    <p class="gallery-caption">First day in hostel</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery3.jpg' %}" alt="Memory 3"/>
-                    <p class="gallery-caption">Yamuna riverbank picnic</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery4.jpg' %}" alt="Memory 4"/>
-                    <p class="gallery-caption">College fest selfie</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery5.jpg' %}" alt="Memory 5"/>
-                    <p class="gallery-caption">Birthday cake surprise</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="{% static 'memories/gallery6.jpg' %}" alt="Memory 6"/>
-                    <p class="gallery-caption">New Year's flash mob</p>
-                </div>
+<section id="gallery-section" class="section gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <!-- 1 Video at the top left (spans two columns on large screens) -->
+            <div class="gallery-media gallery-video">
+                <video controls poster="{% static 'memories/video_thumbnail.jpg' %}" width="100%">
+                    <source src="{% static 'memories/CollegeLab.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="gallery-caption">Fest Performance Video</p>
             </div>
-        </section>
+            <!-- Example images: update src and captions with your own files -->
+            <div class="gallery-media">
+                <img src="{% static 'memories/LaduGopal.jpg' %}" alt="Memory 1"/>
+                <p class="gallery-caption">Gang at the canteen</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/Friends.jpg' %}" alt="Memory 2"/>
+                <p class="gallery-caption">First day in hostel</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/TheBoys.jpg' %}" alt="Memory 3"/>
+                <p class="gallery-caption">Yamuna riverbank picnic</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/TraditionalDay.jpg' %}" alt="Memory 4"/>
+                <p class="gallery-caption">College fest selfie</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/BasketBoys.jpg' %}" alt="Memory 5"/>
+                <p class="gallery-caption">Birthday cake surprise</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/firstyear.jpg' %}" alt="Memory 6"/>
+                <p class="gallery-caption">New Year's flash mob</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/Football.jpg' %}" alt="Memory 7"/>
+                <p class="gallery-caption">Sports day win</p>
+            </div>
+            <div class="gallery-media">
+                <img src="{% static 'memories/BasketWin.jpg' %}" alt="Memory 8"/>
+                <p class="gallery-caption">Monsoon magic</p>
+            </div>
+            <!-- Add/remove images as needed, up to 9 -->
+        </div>
+    </div>
+</section>
+
     </main>
     <footer>
         <p>&copy; 2025 First Frame. All rights reserved.</p>
