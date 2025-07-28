@@ -2,26 +2,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>First Frame | A Freshman's Journey</title>
-    <link rel="stylesheet" href="{% static 'memories/style.css' %}">
+    <link rel="stylesheet" href="{% static 'memories/style.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <script>
+      // Smooth scroll for anchor links
+      document.addEventListener("DOMContentLoaded", function() {
+        document.documentElement.style.scrollBehavior = "smooth";
+      });
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">First Frame 🎞️</h1>
-        <p class="tagline">Capturing the Vibes of My First Year</p>
-        <p class="welcome">Welcome to my digital memory lane! This site shares the rollercoaster of my first year in college.</p>
+        <header>
+            <h1 class="title">First Frame 🎞️</h1>
+            <p class="tagline">Capturing the Vibes of My First Year</p>
+        </header>
+        
+        <section class="welcome-section" id="welcome">
+            <p class="welcome">
+                Welcome to my digital memory lane! This site shares the rollercoaster of my first year in college.
+            </p>
+        </section>
+        
+        <!--
+        Placeholders for future photo/video uploads:
+        <div class="profile-media">
+            <!-- Later you can add an <img src="..." /> for your profile photo here --
+            <!-- Or embed a <video controls src="..."></video> here --
+        </div>
+        -->
 
         <nav>
             <ul class="nav-links">
+                <li><a href="#welcome">Home</a></li>
+                <!-- You can point these links to other sections or pages when created -->
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Memories</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Challenges</a></li>
-                <li><a href="#">Lessons</a></li>
+                <li><a href="#">Lessons Learned</a></li>
                 <li><a href="#">Thank You</a></li>
             </ul>
         </nav>
-    </div>
-</body>
-</html>
+        
+        <footer>
+            <p>&copy; 2025 First Frame. All rights reserved.</p>
+        </footer>
