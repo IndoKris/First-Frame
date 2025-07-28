@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>First Frame | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'memories/style.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="title"><a href="{% url 'home' %}">First Frame 🎞️</a></h1>
+        <p class="tagline">Capturing the Vibes of My First Year</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about_me' %}">About Me</a></li>
+                <li><a href="{% url 'memories' %}">Memories</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'thank_you' %}">Thank You</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 First Frame. All rights reserved.</p>
+    </footer>
+</body>
+</html>
