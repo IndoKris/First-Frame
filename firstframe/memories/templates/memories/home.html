@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>First Frame | A Freshman's Journey</title>
+    <title>First Frame</title>
     <link rel="stylesheet" href="{% static 'memories/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
@@ -23,16 +23,54 @@
         </nav>
     </header>
     <main>
-        <!-- Home Section -->
-        <section id="home-section" class="section home-section">
-            <div class="home-bg-img"></div>
-            <div class="home-content">
-                <h2 class="home-title">First Frame</h2>
-                <p class="home-tagline">Capturing the Vibes of My First Year</p>
-                <p class="home-welcome">Welcome! This website is my digital memory lane—reliving the best (and funniest) moments, sharing experiences, and connecting with everyone who's been part of the journey.</p>
-                <p class="home-intro">Explore memories, photos, videos, and more as I document my first-year story at college. Dive in below!</p>
-            </div>
-        </section>
+<!-- Home Section -->
+<section id="home-section" class="section home-section">
+  <!-- Animated decorative accent -->
+  <div class="home-background-accent"></div>
+  
+  <!-- Sidebar content: Welcome, title, intro (now left-aligned) -->
+  <div class="home-content creative">
+    <h2 class="home-title">First Frame</h2>
+    <div class="home-tagline">
+      <span>Capturing the Vibes of My First Year</span>  
+      <span class="home-burst">🎉</span>
+    </div>
+    <p class="home-welcome">
+      Welcome! This digital memory lane is for <b>every laugh, late-night hustle, awkward intro, and triumphant win</b>—photos, stories, and spontaneous adventures that meant EVERYTHING! 👾
+    </p>
+    <p class="home-intro">
+      Scroll on to relive the <span style="color: var(--accent); font-weight: 700;">wildest, funniest, most surprising</span> moments of my first year at <u>college</u>—and maybe spot your own cameo!
+    </p>
+    <div class="home-stats-row">
+      <div><img src="{% static 'memories/icon_camera.png' %}" alt="Camera" /> 230+ photos</div>
+      <div><img src="{% static 'memories/icon_star.png' %}" alt="Star" /> 7 crazy events</div>
+      <div><img src="{% static 'memories/icon_trophy.png' %}" alt="Trophy" /> 15 trophies (food fights included!)</div>
+    </div>
+  </div>
+
+  <!-- Polaroid-style floating images (right column) -->
+  <div class="home-polaroids">
+    <div class="polaroid pol1">
+      <img src="{% static 'memories/pol_photo1.jpg' %}" alt="Orientation Day"/>
+      <div class="caption">Orientation <span>2024</span></div>
+    </div>
+    <div class="polaroid pol2">
+      <img src="{% static 'memories/pol_photo2.jpg' %}" alt="Canteen Clique"/>
+      <div class="caption">Canteen Crew</div>
+    </div>
+    <div class="polaroid pol3">
+      <img src="{% static 'memories/pol_photo3.jpg' %}" alt="Sports Win"/>
+      <div class="caption">Victory Vibes</div>
+    </div>
+    <!-- Add your sliding animated character image HERE: -->
+  <img
+    src="{% static 'memories/image copy 2.png' %}"
+    alt="Waving Cartoon Character"
+    class="slide-in-character" />
+</section>
+  </div>
+</section>
+
         <!-- About Me Section -->
 <section id="about-section" class="section about-section">
   <div class="about-bg-fade"></div>
