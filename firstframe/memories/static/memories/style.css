@@ -827,3 +827,23 @@ footer {
         transform: scale(1) rotate(0deg);
     }
 }
+.timeline-video,
+.gallery-media video {
+    /* For a vertical "reel" look, use 9:16 aspect ratio */
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    max-width: 320px;    /* adjust for desired on-screen size */
+    max-height: 540px;
+    border-radius: 14px;
+    margin: 14px 0 10px 0;
+    background: #f9fbfd;
+    box-shadow: 0 4px 18px #bed6ee33;
+    object-fit: cover;
+}
+
+/* Optional: Center the video horizontally in its container */
+.timeline-content, .gallery-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

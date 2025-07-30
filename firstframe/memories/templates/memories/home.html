@@ -25,18 +25,13 @@
     <main>
 <!-- Home Section -->
 <section id="home-section" class="section home-section">
-  <!-- Animated decorative accent -->
-  <div class="home-background-accent"></div>
-  
-  <!-- Sidebar content: Welcome, title, intro (now left-aligned) -->
   <div class="home-content creative">
     <h2 class="home-title">First Frame</h2>
     <div class="home-tagline">
       <span>Capturing the Vibes of My First Year</span>  
-      <span class="home-burst">🎉</span>
     </div>
     <p class="home-welcome">
-      Welcome! This digital memory lane is for <b>every laugh, late-night hustle, awkward intro, and triumphant win</b>—photos, stories, and spontaneous adventures that meant EVERYTHING! 👾
+      Welcome! This digital memory lane is for <b>every laugh, late-night hustle, awkward intro, and triumphant win</b> photos, stories, and spontaneous adventures that meant EVERYTHING! 👾
     </p>
     <p class="home-intro">
       Scroll on to relive the <span style="color: var(--accent); font-weight: 700;">wildest, funniest, most surprising</span> moments of my first year at <u>college</u>—and maybe spot your own cameo!
@@ -48,28 +43,13 @@
     </div>
   </div>
 
-  <!-- Polaroid-style floating images (right column) -->
-  <div class="home-polaroids">
-    <div class="polaroid pol1">
-      <img src="{% static 'memories/pol_photo1.jpg' %}" alt="Orientation Day"/>
-      <div class="caption">Orientation <span>2024</span></div>
-    </div>
-    <div class="polaroid pol2">
-      <img src="{% static 'memories/pol_photo2.jpg' %}" alt="Canteen Clique"/>
-      <div class="caption">Canteen Crew</div>
-    </div>
-    <div class="polaroid pol3">
-      <img src="{% static 'memories/pol_photo3.jpg' %}" alt="Sports Win"/>
-      <div class="caption">Victory Vibes</div>
-    </div>
-    <!-- Add your sliding animated character image HERE: -->
+  <!-- Right-side large/animated image (replace the filename as you wish) -->
   <img
     src="{% static 'memories/image copy 2.png' %}"
     alt="Waving Cartoon Character"
-    class="slide-in-character" />
+    class="slide-in-character home-main-image" />
 </section>
-  </div>
-</section>
+
 
         <!-- About Me Section -->
 <section id="about-section" class="section about-section">
@@ -112,45 +92,45 @@
   <div class="timeline">
 
     <div class="timeline-event">
-      <div class="timeline-icon funny" title="Funny">😂</div>
+      <div class="timeline-icon Genesis" title="Genesis">📽️</div>
       <div class="timeline-content">
-        <div class="timeline-date">July 2024</div>
-        <video controls poster="{% static 'memories/thumb1.jpg' %}" class="timeline-video">
-          <source src="{% static 'memories/video1.mp4' %}" type="video/mp4">
+        <div class="timeline-date">May 2025</div>
+        <video controls poster="{% static 'memories/firstyear.jpg' %}" class="timeline-video">
+          <source src="{% static 'memories/FirstYearRecap.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="timeline-desc">
-          First orientation day: got lost—ended up making lifelong friends!
+          A glimpse into my first year — moments lived, memories made.
         </div>
-        <span class="timeline-tag funny">funny</span>
+        <span class="timeline-tag Nostalgic">Nostalgic</span>
       </div>
     </div>
 
     <div class="timeline-event">
-      <div class="timeline-icon emotional" title="Emotional">🥲</div>
+      <div class="timeline-icon emotional" title="TechManthan">💡</div>
       <div class="timeline-content">
         <div class="timeline-date">September 2024</div>
-        <video controls poster="{% static 'memories/thumb2.jpg' %}" class="timeline-video">
-          <source src="{% static 'memories/video2.mp4' %}" type="video/mp4">
+        <video controls poster="{% static 'memories/Techmanthan.jpeg' %}" class="timeline-video">
+          <source src="{% static 'memories/Techmanthan.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="timeline-desc">
-          Homesickness hit hard, called family every night but found solace in friends.
+         Attended TechManthan immersed in ideas, innovation, and inspiration.
         </div>
-        <span class="timeline-tag emotional">emotional</span>
+        <span class="timeline-tag Inspired">Inspired</span>
       </div>
     </div>
 
     <div class="timeline-event">
-      <div class="timeline-icon performance" title="Performance">🎤</div>
+      <div class="timeline-icon performance" title="Performance"> ⚽</div>
       <div class="timeline-content">
         <div class="timeline-date">October 2024</div>
-        <video controls poster="{% static 'memories/thumb3.jpg' %}" class="timeline-video">
-          <source src="{% static 'memories/video3.mp4' %}" type="video/mp4">
+        <video controls poster="{% static 'memories/Football.jpeg' %}" class="timeline-video">
+          <source src="{% static 'memories/WhatsApp Video 2025-07-30 at 22.01.00.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="timeline-desc">
-          Performed at college fest — nerves were high, but the thrill unmatched.
+          Performed at SPPU Intercollege Football
         </div>
         <span class="timeline-tag performance">performance</span>
       </div>
@@ -160,27 +140,27 @@
       <div class="timeline-icon coding" title="Coding">💻</div>
       <div class="timeline-content">
         <div class="timeline-date">November 2024</div>
-        <video controls poster="{% static 'memories/thumb4.jpg' %}" class="timeline-video">
-          <source src="{% static 'memories/video4.mp4' %}" type="video/mp4">
+        <video controls poster="{% static 'memories/image.png' %}" class="timeline-video">
+          <source src="{% static 'memories/CodeAllNight.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="timeline-desc">
-          Pulled an all-nighter for coding project — teamwork and caffeine saved the day.
+          Coding all night to get the project working 
         </div>
         <span class="timeline-tag coding">coding</span>
       </div>
     </div>
 
     <div class="timeline-event">
-      <div class="timeline-icon" title="Video">🎬</div>
+      <div class="timeline-icon" title="Video">🏀</div>
       <div class="timeline-content">
         <div class="timeline-date">December 2024</div>
-        <video controls poster="{% static 'memories/thumb5.jpg' %}" class="timeline-video">
-          <source src="{% static 'memories/video5.mp4' %}" type="video/mp4">
+        <video controls poster="{% static 'memories/BBSPPU.jpeg' %}" class="timeline-video">
+          <source src="{% static 'memories/BBSPPU.mp4' %}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <div class="timeline-desc">
-          <b>Dance Night Recap Video</b>
+          Performed at SPPU Intercollege Basketball
         </div>
         <span class="timeline-tag fun">fun</span>
       </div>
@@ -197,44 +177,40 @@
         <div class="gallery-grid">
             <!-- 1 Video at the top left (spans two columns on large screens) -->
             <div class="gallery-media gallery-video">
-                <video controls poster="{% static 'memories/video_thumbnail.jpg' %}" width="100%">
-                    <source src="{% static 'memories/CollegeLab.mp4' %}" type="video/mp4">
+                <video controls poster="{% static 'memories/JSCOE.jpeg' %}" width="100%">
+                    <source src="{% static 'memories/CLIPS.mp4' %}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p class="gallery-caption">Fest Performance Video</p>
+                <p class="gallery-caption">2024 in fast-forward </p>
             </div>
             <!-- Example images: update src and captions with your own files -->
             <div class="gallery-media">
                 <img src="{% static 'memories/LaduGopal.jpg' %}" alt="Memory 1"/>
-                <p class="gallery-caption">Gang at the canteen</p>
+                <p class="gallery-caption">Gang at Mall</p>
             </div>
             <div class="gallery-media">
                 <img src="{% static 'memories/Friends.jpg' %}" alt="Memory 2"/>
-                <p class="gallery-caption">First day in hostel</p>
+                <p class="gallery-caption">Mismatch Day</p>
             </div>
             <div class="gallery-media">
                 <img src="{% static 'memories/TheBoys.jpg' %}" alt="Memory 3"/>
-                <p class="gallery-caption">Yamuna riverbank picnic</p>
+                <p class="gallery-caption">Caught slipping, looked cool</p>
             </div>
             <div class="gallery-media">
                 <img src="{% static 'memories/TraditionalDay.jpg' %}" alt="Memory 4"/>
-                <p class="gallery-caption">College fest selfie</p>
+                <p class="gallery-caption">Traditional Day</p>
             </div>
             <div class="gallery-media">
                 <img src="{% static 'memories/BasketBoys.jpg' %}" alt="Memory 5"/>
-                <p class="gallery-caption">Birthday cake surprise</p>
+                <p class="gallery-caption">FE Basketball</p>
             </div>
             <div class="gallery-media">
-                <img src="{% static 'memories/firstyear.jpg' %}" alt="Memory 6"/>
-                <p class="gallery-caption">New Year's flash mob</p>
-            </div>
-            <div class="gallery-media">
-                <img src="{% static 'memories/Football.jpg' %}" alt="Memory 7"/>
-                <p class="gallery-caption">Sports day win</p>
+                <img src="{% static 'memories/BBSPPU.jpeg' %}" alt="Memory 7"/>
+                <p class="gallery-caption">SPPU Football Team</p>
             </div>
             <div class="gallery-media">
                 <img src="{% static 'memories/BasketWin.jpg' %}" alt="Memory 8"/>
-                <p class="gallery-caption">Monsoon magic</p>
+                <p class="gallery-caption">Antarnaad Basketball Runner's Up</p>
             </div>
             <!-- Add/remove images as needed, up to 9 -->
         </div>
