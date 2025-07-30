@@ -55,6 +55,7 @@ body {
     letter-spacing: 1.5px;
     font-size: 2.05rem;
     font-weight: 800;
+    
 }
 
 .site-header .site-name a {
@@ -132,7 +133,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between; /* Changed from flex-start */
     background: transparent;
     overflow: visible;
     padding: 64px 0 70px 0;
@@ -229,6 +230,7 @@ footer {
     vertical-align: middle;
 }
 
+/* NEWLY ACTIVATED: Polaroid Right-Side Stack */
 .home-polaroids {
     display: flex;
     flex-direction: column;
@@ -237,6 +239,7 @@ footer {
     position: relative;
     margin-right: 4vw;
     margin-top: 10px;
+    z-index: 1;
 }
 
 .polaroid {
@@ -249,7 +252,6 @@ footer {
     position: relative;
     z-index: 2;
     cursor: pointer;
-    transform: rotate(-5deg);
 }
 .polaroid img {
     width: 100%;
@@ -268,11 +270,16 @@ footer {
     font-weight: 600;
     letter-spacing: 0.1em;
 }
+
 .pol1 { transform: rotate(-5deg) translateX(8px);}
 .pol2 { transform: rotate(2deg) translateX(-10px);}
 .pol3 { transform: rotate(-7deg) translateX(14px);}
-.polaroid:hover { transform: scale(1.07) rotate(0deg); box-shadow: 0 8px 42px #b4c9ee62;}
+.polaroid:hover { 
+    transform: scale(1.07) rotate(0deg) translateY(-4px); 
+    box-shadow: 0 8px 42px #b4c9ee62;
+}
 
+/* Responsive Fixes */
 @media (max-width: 1000px) {
     .home-section {
         flex-direction: column;
@@ -302,6 +309,7 @@ footer {
     }
     .home-title { font-size: 1.5rem;}
 }
+
 
 /* --- New About Me Section --- */
 .about-section {
@@ -846,4 +854,32 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.home-main-image {
+    max-height: 90vh;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 50vw; /* Half of the screen */
+  max-width: none;
+  height: auto;
+  z-index: 1;
+  animation: slideInRight 1.2s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .home-main-image {
+    width: 80vw;
+    top: 20%;
+  }
 }
